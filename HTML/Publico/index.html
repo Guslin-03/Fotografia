@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Mis Trabajos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- Header -->
+  <header class="bg-primary text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="#">Mis Trabajos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="pedidos.html">Solicitar Pedido</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container py-5">
+    <h1 class="text-center mb-4">Bienvenidos a Mis Trabajos</h1>
+    <p class="text-center">Soy un apasionado creador y organizador de eventos, con experiencia en ofrecer soluciones
+      personalizadas para todo tipo de ocasiones especiales. En esta web podrás explorar mi portafolio, solicitar
+      servicios y gestionar tus eventos de manera fácil y rápida.</p>
+
+    <section class="mt-5">
+      <h2 class="text-center mb-4">¿Qué puedo hacer por ti?</h2>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="https://picsum.photos/200/101/?random" alt="Organización de eventos"
+            class="img-fluid rounded-circle mb-3" style="width: 350px;">
+          <h3>Organización de Eventos</h3>
+          <p>Desde bodas hasta fiestas personalizadas, me encargo de que todo sea perfecto.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://picsum.photos/200/102/?random" alt="Decoración personalizada"
+            class="img-fluid rounded-circle mb-3" style="width: 350px;">
+          <h3>Decoración Creativa</h3>
+          <p>Crea ambientes únicos con decoraciones que reflejen tu estilo y personalidad.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://picsum.photos/200/103/?random" alt="Trabajos realizados"
+            class="img-fluid rounded-circle mb-3" style="width: 350px;">
+          <h3>Galería de Trabajos</h3>
+          <p>Inspírate con ejemplos de proyectos exitosos que he llevado a cabo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <script src="../UTILS/footer.js"></script>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Acceso Privado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña - enEsteRetoYoLoPeto</label>
+              <input type="password" id="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Acceder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

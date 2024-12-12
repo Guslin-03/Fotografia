@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitar Pedido - Mis Trabajos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <!-- Header -->
+  <header class="bg-primary text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand" href="#">Mis Trabajos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pedidos.html">Solicitar Pedido</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección Solicitar Pedido -->
+  <section id="pedidos" class="container py-5">
+    <h2 class="text-center mb-4">Solicitud de Pedido</h2>
+    <form id="pedidoForm" class="needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+        <div class="invalid-feedback">El nombre no debe contener números.</div>
+      </div>
+      <div class="mb-3">
+        <label for="apellidos" class="form-label">Apellidos</label>
+        <input type="text" id="apellidos" class="form-control" placeholder="Tus apellidos" required>
+        <div class="invalid-feedback">Introduce al menos dos palabras sin números.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="tu@correo.com" required>
+        <div class="invalid-feedback">Introduce un email válido.</div>
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="text" id="telefono" class="form-control" placeholder="123456789" required>
+        <div class="invalid-feedback">El teléfono debe tener 9 dígitos y solo números.</div>
+      </div>
+      <div class="mb-3">
+        <label for="tipoEvento" class="form-label">Tipo de Evento</label>
+        <select id="tipoEvento" class="form-select" required>
+          <option value="">Selecciona...</option>
+          <option value="bautizo">Bautizo</option>
+          <option value="comunion">Comunión</option>
+          <option value="boda">Boda</option>
+          <option value="fiesta">Fiesta</option>
+          <option value="otro">Otro</option>
+        </select>
+        <div class="invalid-feedback">Selecciona un tipo de evento.</div>
+      </div>
+      <div class="mb-3 d-none" id="eventoOtro">
+        <label for="otroEvento" class="form-label">Especifica el tipo de evento</label>
+        <input type="text" id="otroEvento" class="form-control" placeholder="Describe el evento">
+      </div>
+      <div class="mb-3">
+        <label for="lugar" class="form-label">Lugar</label>
+        <input type="text" id="lugar" class="form-control" placeholder="Lugar del evento" required>
+        <div class="invalid-feedback">Indica el lugar del evento.</div>
+      </div>
+      <div class="mb-3">
+        <label for="fecha" class="form-label">Fecha</label>
+        <input type="date" id="fecha" class="form-control" required>
+        <div class="invalid-feedback">Selecciona una fecha válida.</div>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Enviar Solicitud</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <script src="../UTILS/footer.js"></script>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Acceso Privado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" id="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Acceder</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../JS/Publico/pedidos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
